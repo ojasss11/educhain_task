@@ -1,0 +1,239 @@
+# EduChain MCP - Detailed Test Runs
+
+
+==> TEST: Generate Quiz
+Topic: Data Structures | Num: 4
+
+POST http://127.0.0.1:8000/tools/quiz
+Payload:
+{
+  "topic": "Data Structures",
+  "num_questions": 4
+}
+
+Response:
+{
+  "quiz": [
+    {
+      "question": "Sample question 1 about Data Structures"
+    },
+    {
+      "question": "Sample question 2 about Data Structures"
+    },
+    {
+      "question": "Sample question 3 about Data Structures"
+    },
+    {
+      "question": "Sample question 4 about Data Structures"
+    }
+  ]
+}
+
+==> TEST: Generate Study Plan
+Topic: Chemistry
+
+GET http://127.0.0.1:8000/tools/study_plan?topic=Chemistry
+
+Response:
+{
+  "study_plan": [
+    "Step 1: Study Chemistry concept 1",
+    "Step 2: Study Chemistry concept 2",
+    "Step 3: Study Chemistry concept 3",
+    "Step 4: Study Chemistry concept 4",
+    "Step 5: Study Chemistry concept 5"
+  ]
+}
+
+==> TEST: Generate Flashcards
+Topic: Trigonometry | Num: 2
+
+POST http://127.0.0.1:8000/tools/flashcards
+Payload:
+{
+  "topic": "Trigonometry",
+  "num_cards": 2
+}
+
+Response:
+{
+  "flashcards": [
+    {
+      "term": "Trigonometry Term 1",
+      "definition": "Definition for Trigonometry Term 1"
+    },
+    {
+      "term": "Trigonometry Term 2",
+      "definition": "Definition for Trigonometry Term 2"
+    }
+  ]
+}
+
+==> TEST: Generate Quiz
+Topic: World History | Num: 3
+
+POST http://127.0.0.1:8000/tools/quiz
+Payload:
+{
+  "topic": "World History",
+  "num_questions": 3
+}
+
+Response:
+{
+  "quiz": [
+    {
+      "question": "Sample question 1 about World History"
+    },
+    {
+      "question": "Sample question 2 about World History"
+    },
+    {
+      "question": "Sample question 3 about World History"
+    }
+  ]
+}
+
+==> TEST: Generate Flashcards
+Topic: Computer Networks | Num: 5
+
+POST http://127.0.0.1:8000/tools/flashcards
+Payload:
+{
+  "topic": "Computer Networks",
+  "num_cards": 5
+}
+
+Response:
+{
+  "flashcards": [
+    {
+      "term": "Computer Networks Term 1",
+      "definition": "Definition for Computer Networks Term 1"
+    },
+    {
+      "term": "Computer Networks Term 2",
+      "definition": "Definition for Computer Networks Term 2"
+    },
+    {
+      "term": "Computer Networks Term 3",
+      "definition": "Definition for Computer Networks Term 3"
+    },
+    {
+      "term": "Computer Networks Term 4",
+      "definition": "Definition for Computer Networks Term 4"
+    },
+    {
+      "term": "Computer Networks Term 5",
+      "definition": "Definition for Computer Networks Term 5"
+    }
+  ]
+}
+
+==> TEST: Generate Worksheet
+Topic: Physics
+
+GET http://127.0.0.1:8000/tools/worksheet?topic=Physics
+
+Response:
+{
+  "worksheet": [
+    {
+      "question": "Worksheet question 1 about Physics"
+    },
+    {
+      "question": "Worksheet question 2 about Physics"
+    },
+    {
+      "question": "Worksheet question 3 about Physics"
+    },
+    {
+      "question": "Worksheet question 4 about Physics"
+    },
+    {
+      "question": "Worksheet question 5 about Physics"
+    }
+  ]
+}
+
+==> TEST: Generate Vocabulary List
+Text: Photosynthesis is the process by which plants make food using sunlight.
+
+GET http://127.0.0.1:8000/tools/vocabulary?text=Photosynthesis is the process by which plants make food using sunlight.
+
+Response:
+{
+  "vocabulary": [
+    {
+      "word": "Photosynthesis",
+      "definition": "Definition of Photosynthesis"
+    },
+    {
+      "word": "is",
+      "definition": "Definition of is"
+    },
+    {
+      "word": "the",
+      "definition": "Definition of the"
+    },
+    {
+      "word": "process",
+      "definition": "Definition of process"
+    },
+    {
+      "word": "by",
+      "definition": "Definition of by"
+    }
+  ]
+}
+
+==> TEST: Generate Projects
+Topic: AI
+
+GET http://127.0.0.1:8000/tools/projects?topic=AI
+
+Response:
+{
+  "projects": [
+    "Project Idea 1 for AI",
+    "Project Idea 2 for AI",
+    "Project Idea 3 for AI"
+  ]
+}
+
+==> TEST: Generate Assignment
+Topic: Climate Change
+
+GET http://127.0.0.1:8000/tools/assignment?topic=Climate Change
+
+Response:
+{
+  "assignment": "Write an essay about Climate Change covering key aspects."
+}
+
+==> TEST: Generate Exam
+Topic: Calculus
+
+GET http://127.0.0.1:8000/tools/exam?topic=Calculus
+
+Response:
+{
+  "exam": [
+    {
+      "question": "Exam question 1 about Calculus"
+    },
+    {
+      "question": "Exam question 2 about Calculus"
+    },
+    {
+      "question": "Exam question 3 about Calculus"
+    },
+    {
+      "question": "Exam question 4 about Calculus"
+    },
+    {
+      "question": "Exam question 5 about Calculus"
+    }
+  ]
+}
+
